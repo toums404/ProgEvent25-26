@@ -1,6 +1,6 @@
 ﻿namespace ProgEvent25_26
 {
-    partial class Form2
+    partial class EcranDeux
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EcranDeux));
             SuspendLayout();
             // 
-            // Form2
+            // EcranDeux
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(978, 592);
-            Name = "Form2";
-            Text = "Form2";
-            Load += Form2_Load;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Zoom;
+            ClientSize = new Size(800, 450);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Name = "EcranDeux";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "EcranDeux";
+            FormClosing += EcranDeux_FormClosing;
+            Load += EcranDeux_Load;
             ResumeLayout(false);
         }
 

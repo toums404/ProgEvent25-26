@@ -10,16 +10,22 @@ using System.Windows.Forms;
 
 namespace ProgEvent25_26
 {
-    public partial class Form2 : Form
+    public partial class EcranDeux : Form
     {
-        public Form2()
+        public EcranDeux()
         {
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void EcranDeux_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void EcranDeux_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            MessageBox.Show("Fermeture de la fenêtre EcranDeux");
+            Application.Exit();
         }
     }
 }
